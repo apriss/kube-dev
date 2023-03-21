@@ -79,5 +79,7 @@ spec:
     - port: 9090
       name: console
     - port: 9000
+      protocol: TCP
+      targetPort: 8001
       name: s3
-  type: ClusterIP
+  type: LoadBalancer
